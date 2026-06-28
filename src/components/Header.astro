@@ -1,0 +1,108 @@
+---
+---
+<div class="bg-brand-navy text-slate-300 text-xs py-2 px-4 border-b border-slate-800 hidden sm:block">
+  <div class="max-w-7xl mx-auto flex justify-between items-center font-sans">
+    <div class="flex items-center space-x-6">
+      <span class="flex items-center space-x-1.5">
+        <!-- Email icon -->
+        <svg class="w-3.5 h-3.5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+        <span>info@3dstructure.com.au</span>
+      </span>
+    </div>
+    <div class="flex items-center space-x-4">
+      <span>Office: 42b Synnot Street, Werribee</span>
+    </div>
+  </div>
+</div>
+
+<!-- Main sticky navigation -->
+<header id="main-header" class="bg-white text-brand-navy shadow-sm sticky top-0 z-50 border-b-2 border-slate-200 transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-20">
+      
+      <a href="/" class="flex items-center space-x-3 group">
+        <img src="/3dstructure-logo.png" alt="3D Structure Logo" class="h-12 w-auto object-contain" />
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="hidden md:flex space-x-8 items-center font-condensed font-bold uppercase text-sm tracking-wide">
+        <a href="#about" class="text-slate-600 hover:text-brand-blue border-b-2 border-transparent hover:border-accent py-2 transition-all">About Us</a>
+        <a href="#services" class="text-slate-600 hover:text-brand-blue border-b-2 border-transparent hover:border-accent py-2 transition-all">Services</a>
+        <a href="#process" class="text-slate-600 hover:text-brand-blue border-b-2 border-transparent hover:border-accent py-2 transition-all">Our Process</a>
+        <a href="#industries" class="text-slate-600 hover:text-brand-blue border-b-2 border-transparent hover:border-accent py-2 transition-all">Industries</a>
+        <a href="#projects" class="text-slate-600 hover:text-brand-blue border-b-2 border-transparent hover:border-accent py-2 transition-all">Projects</a>
+        <a href="#quality" class="text-slate-600 hover:text-brand-blue border-b-2 border-transparent hover:border-accent py-2 transition-all">Quality Control</a>
+      </nav>
+
+      <!-- Right CTA -->
+      <div class="hidden md:flex items-center">
+        <a href="#contact" class="bg-accent hover:bg-accent-hover text-white text-xs font-condensed font-bold uppercase tracking-wider px-5 py-3 rounded-none border-b-4 border-orange-800 transition-all active:translate-y-0.5">
+          Request a Quote
+        </a>
+      </div>
+
+      <!-- Mobile menu button -->
+      <div class="md:hidden flex items-center">
+        <button id="mobile-menu-btn" class="text-brand-navy focus:outline-none p-2 border border-slate-200" aria-label="Toggle Menu">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path id="menu-icon-hamburger" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            <path id="menu-icon-close" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-t border-slate-800 text-white font-condensed uppercase font-bold text-sm tracking-wide">
+    <div class="px-4 pt-2 pb-6 space-y-3">
+      <a href="#about" class="block py-2.5 px-3 border-b border-slate-800 hover:bg-brand-blue text-slate-300">About Us</a>
+      <a href="#services" class="block py-2.5 px-3 border-b border-slate-800 hover:bg-brand-blue text-slate-300">Services</a>
+      <a href="#process" class="block py-2.5 px-3 border-b border-slate-800 hover:bg-brand-blue text-slate-300">Our Process</a>
+      <a href="#industries" class="block py-2.5 px-3 border-b border-slate-800 hover:bg-brand-blue text-slate-300">Industries Served</a>
+      <a href="#projects" class="block py-2.5 px-3 border-b border-slate-800 hover:bg-brand-blue text-slate-300">Featured Projects</a>
+      <a href="#quality" class="block py-2.5 px-3 border-b border-slate-800 hover:bg-brand-blue text-slate-300">Quality Control</a>
+      <div class="pt-3 px-3">
+        <a href="#contact" class="block text-center bg-accent hover:bg-accent-hover text-white py-3 px-4 rounded-none uppercase font-bold text-xs tracking-wider">
+          Request a Quote
+        </a>
+      </div>
+      <div class="pt-4 border-t border-slate-800 text-slate-400 text-xs px-3 space-y-1 font-sans font-normal normal-case">
+        <p>Email: info@3dstructure.com.au</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<script is:inline>
+  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const hamburgerIcon = document.getElementById('menu-icon-hamburger');
+  const closeIcon = document.getElementById('menu-icon-close');
+
+  if (mobileMenuBtn && mobileMenu) {
+    mobileMenuBtn.addEventListener('click', () => {
+      const isHidden = mobileMenu.classList.contains('hidden');
+      if (isHidden) {
+        mobileMenu.classList.remove('hidden');
+        hamburgerIcon.classList.add('hidden');
+        closeIcon.classList.remove('hidden');
+      } else {
+        mobileMenu.classList.add('hidden');
+        hamburgerIcon.classList.remove('hidden');
+        closeIcon.classList.add('hidden');
+      }
+    });
+
+    // Close menu when clicking nav links
+    const mobileLinks = mobileMenu.querySelectorAll('a');
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        hamburgerIcon.classList.remove('hidden');
+        closeIcon.classList.add('hidden');
+      });
+    });
+  }
+</script>

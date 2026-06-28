@@ -1,0 +1,146 @@
+---
+---
+<section id="contact" class="py-16 bg-white border-b border-slate-200">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+      
+      <!-- Left Column: Estimating Contacts & RFQ Details -->
+      <div class="lg:col-span-5 space-y-6">
+        <div class="flex items-center space-x-3">
+          <span class="w-1.5 h-8 bg-accent block"></span>
+          <span class="text-xs font-condensed font-extrabold uppercase tracking-widest text-slate-500">ESTIMATION & RFQ</span>
+        </div>
+        
+        <h2 class="text-3xl font-condensed font-bold uppercase tracking-tight text-brand-navy">
+          Ready to Start Your Next Project?
+        </h2>
+        
+        <p class="text-xs text-slate-500 font-sans leading-relaxed">
+          Submit your structural design layouts, architectural plans, or preliminary models. Our estimating team will review your project parameters and supply a comprehensive scope of work and quotation.
+        </p>
+
+        <div class="space-y-4 pt-4">
+
+
+          <!-- Email contact -->
+          <div class="flex items-start space-x-3.5 border-b border-slate-100 pb-3">
+            <span class="bg-slate-100 text-brand-navy p-2 mt-0.5">
+              <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+            </span>
+            <div>
+              <h4 class="text-xs font-condensed font-bold uppercase tracking-wide text-brand-navy">Estimating Email</h4>
+              <p class="text-sm font-condensed font-bold text-slate-700 mt-0.5">info@3dstructure.com.au</p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-3.5">
+            <span class="bg-slate-100 text-brand-navy p-2 mt-0.5">
+              <svg class="w-5 h-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+            </span>
+            <div>
+              <h4 class="text-xs font-condensed font-bold uppercase tracking-wide text-brand-navy">Office Address</h4>
+              <p class="text-xs text-slate-600 mt-0.5">42b Synnot Street, Werribee, VIC 3030</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- RFQ Turnaround promise -->
+        <div class="bg-slate-50 border border-slate-200 p-4 font-sans text-[11px] text-slate-500 mt-6 space-y-2">
+          <p class="font-bold text-brand-navy">QUOTATION TURNAROUND COMMITMENT</p>
+          <p>We guarantee a response/acknowledgement within 24 hours. Full quantity-takeoff estimates are typically supplied within 2 to 4 business days depending on design complexity.</p>
+        </div>
+
+      </div>
+
+      <!-- Right Column: Estimation Form -->
+      <div class="lg:col-span-7 bg-slate-100 p-8 border border-slate-250 rounded-none w-full">
+        <h3 class="text-lg font-condensed font-bold uppercase text-brand-navy mb-6 pb-2 border-b border-slate-250">
+          Request a Detailing Quote
+        </h3>
+        
+        <form class="space-y-4 text-xs" onsubmit="event.preventDefault(); alert('RFQ Submitted (Simulation).');">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            
+            <!-- Contact Name -->
+            <div class="flex flex-col space-y-1.5">
+              <label for="name" class="font-condensed font-bold text-slate-700 uppercase tracking-wide">Contact Name *</label>
+              <input type="text" id="name" required class="bg-white border border-slate-300 p-3 rounded-none focus:outline-none focus:border-brand-blue" placeholder="e.g. John Smith" />
+            </div>
+            
+            <!-- Company -->
+            <div class="flex flex-col space-y-1.5">
+              <label for="company" class="font-condensed font-bold text-slate-700 uppercase tracking-wide">Company Name *</label>
+              <input type="text" id="company" required class="bg-white border border-slate-300 p-3 rounded-none focus:outline-none focus:border-brand-blue" placeholder="e.g. Apex Steel Fabrication" />
+            </div>
+
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            
+            <!-- Email -->
+            <div class="flex flex-col space-y-1.5">
+              <label for="email" class="font-condensed font-bold text-slate-700 uppercase tracking-wide">Email Address *</label>
+              <input type="email" id="email" required class="bg-white border border-slate-300 p-3 rounded-none focus:outline-none focus:border-brand-blue" placeholder="e.g. jsmith@apexsteel.com" />
+            </div>
+            
+            <!-- Phone -->
+            <div class="flex flex-col space-y-1.5">
+              <label for="phone" class="font-condensed font-bold text-slate-700 uppercase tracking-wide">Phone Number</label>
+              <input type="tel" id="phone" class="bg-white border border-slate-300 p-3 rounded-none focus:outline-none focus:border-brand-blue" placeholder="e.g. 0400 123 456" />
+            </div>
+
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            
+            <!-- Project Location (State drop down) -->
+            <div class="flex flex-col space-y-1.5">
+              <label for="location" class="font-condensed font-bold text-slate-700 uppercase tracking-wide">Project State/Territory *</label>
+              <select id="location" required class="bg-white border border-slate-300 p-3 rounded-none focus:outline-none focus:border-brand-blue">
+                <option value="">Select State</option>
+                <option value="QLD">Queensland (QLD)</option>
+                <option value="NSW">New South Wales (NSW)</option>
+                <option value="VIC">Victoria (VIC)</option>
+                <option value="WA">Western Australia (WA)</option>
+                <option value="SA">South Australia (SA)</option>
+                <option value="TAS">Tasmania (TAS)</option>
+                <option value="NT">Northern Territory (NT)</option>
+                <option value="ACT">ACT</option>
+                <option value="INT">International</option>
+              </select>
+            </div>
+            
+            <!-- Estimated Steel Tonnage -->
+            <div class="flex flex-col space-y-1.5">
+              <label for="tonnage" class="font-condensed font-bold text-slate-700 uppercase tracking-wide">Estimated Tonnage (Approx.)</label>
+              <select id="tonnage" class="bg-white border border-slate-300 p-3 rounded-none focus:outline-none focus:border-brand-blue">
+                <option value="">Select Tonnage Bracket</option>
+                <option value="<50">Under 50 Tonnes</option>
+                <option value="50-200">50 - 200 Tonnes</option>
+                <option value="200-500">200 - 500 Tonnes</option>
+                <option value="500-1000">500 - 1,000 Tonnes</option>
+                <option value="1000+">1,000+ Tonnes</option>
+              </select>
+            </div>
+
+          </div>
+
+          <!-- Message / Details -->
+          <div class="flex flex-col space-y-1.5">
+            <label for="details" class="font-condensed font-bold text-slate-700 uppercase tracking-wide">Project Scope & Details *</label>
+            <textarea id="details" required rows="4" class="bg-white border border-slate-300 p-3 rounded-none focus:outline-none focus:border-brand-blue font-sans" placeholder="Describe the structural scope (e.g. portal frame shed, architectural stairs, heavy mining racks) and expected drawing milestones."></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="pt-2">
+            <button type="submit" class="w-full bg-accent hover:bg-accent-hover text-white text-xs font-condensed font-bold uppercase tracking-wider py-4 px-6 rounded-none border-b-4 border-orange-850 transition-all active:translate-y-0.5 cursor-pointer">
+              Submit RFQ Package for Estimate
+            </button>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>

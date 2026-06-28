@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-blue: #1b365d;
+  --color-brand-blue-hover: #122543;
+  --color-brand-navy: #0f172a;
+  --color-accent: #ea580c;
+  --color-accent-hover: #c2410c;
+  --color-accent-yellow: #d97706;
+  --color-steel-grey: #475569;
+  --color-industrial-light: #f8fafc;
+  
+  --font-sans: 'Inter', 'Roboto', sans-serif;
+  --font-condensed: 'Roboto Condensed', sans-serif;
+}
+
+/* Custom styles for grid layouts and patterns */
+.blueprint-grid {
+  background-image: 
+    linear-gradient(rgba(27, 54, 93, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(27, 54, 93, 0.07) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.blueprint-grid-dark {
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
